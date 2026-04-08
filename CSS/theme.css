@@ -32,6 +32,13 @@
     --button-background-color: var(--theme-color);
     --button-border-color: var(--theme-color);
     --button-text-color: var(--dark-color);
+    --button-background-hover-color: var(--dark-color);
+    --button-border-hover-color: var(--dark-color);
+    --button-text-hover-color: var(--white-color);
+    --button-accent-background-hover-color: var(--white-color);
+    --button-accent-border-hover-color: var(--white-color);
+    --button-accent-text-hover-color: var(--dark-color);
+    
 
     --header-background-color: var(--dark-color);
     --header-text-color: var(--white-color);
