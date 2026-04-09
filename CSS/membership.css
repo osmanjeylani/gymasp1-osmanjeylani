@@ -1,10 +1,117 @@
 .membership-cards {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
     gap: 2rem;
+}
+.membership-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 612px;
+    max-width: 404px;
+    border: 1px solid rgb(216, 213, 213);
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 @media (min-width: 992px) {
     .membership-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/*card price box*/
+.card-price-box {
+    background: #080517;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: flex-start;
+
+    margin-top: 1.5rem;
+}
+.price-info strong {
+    font-size: 18px;
+    color: white;
+}
+.price-info span {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-left: 4px;
+}
+.price-info p {
+    font-size: 12px;
+    color: #9ca3af;
+    margin: 2px 0 0;
+}
+.card-price-box .btn {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+}
+.card-note {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 0.8rem;
+}
+
+.membership-card.dark {
+    background: #080517;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 612px;
+    max-width: 404px;
+  
+}
+.cta-content h4 {
+    color: white;
+    text-align: center;
+}
+.cta-description {
+    color: #9ca3af;
+    margin: 1rem 0;
+}
+.cta-divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 1rem 0;
+}
+
+
+
+.cta-top {
+    padding: 2rem;
+    text-align: center;
+}
+.cta-bottom img {
+    max-width: 260px;
+    min-height: 307px;
+    display: block;
+}
+
+/*benefits*/
+.membership-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    color: #6b7280;
+}
+.benefit-item i {
+    color: #d9ff3f;
+    font-size: 14px;
+    
 }
