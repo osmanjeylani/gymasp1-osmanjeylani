@@ -119,11 +119,14 @@
 /*faq-secton*/
 .section_faq {
     padding: 4rem 0;
+    margin-top: 4rem;
 }
 
 .faq-wrapper {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    align-items: stretch;
 }
 
 @media (min-width: 992px) {
@@ -135,7 +138,10 @@
 
 .faq-image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px;
+    margin-top: 4rem;
 }
 
 .faq-item {
@@ -160,9 +166,32 @@
 
 .faq-answer {
     margin-top: 1rem;
-    color: #6b7280;
+    color: #7a806b;
 }
 
 .faq-item:not(.active) .faq-answer {
     display: none;
 }
+
+.faq-content
+.faq-image {
+    height: 100%;
+}
+.faq-content {
+    dispqlay: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .membership-card.dark {
+    background: #080517;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 612px;
+    max-width: 404px;
+  
+} */
