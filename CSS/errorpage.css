@@ -1,0 +1,31 @@
+.section-error {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-content {
+    text-align: center;
+}
+.error-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.error-code span {
+    font-size: 8rem;
+    font-weight: 700;
+}
+.error-code img {
+    width: 538px;
+    height: 345;
+}
+.error-content h2 {
+    margin-bottom: 0.5rem;
+}
+.error-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
